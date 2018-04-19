@@ -8,10 +8,16 @@
             <Color x:Key="colorPal">
                 Orange
             </Color>
+            <Color x:Key="colorSec">
+                Green
+            </Color>
+            <Color x:Key="colorTerc">
+                Brown
+            </Color>
         </ResourceDictionary>
     </ContentPage.Resources>
     
-    <Grid>
+    <Grid BackgroundColor="{StaticResource colorTerc}">
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
@@ -19,8 +25,8 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Button Text="Botón 1" VerticalOptions="Center" BackgroundColor="{StaticResource }"></Button>
-        <Button Text="Botón 2" VerticalOptions="Center"  Grid.Column="1"></Button>
+        <Button Text="Botón 1" VerticalOptions="Center" BackgroundColor="{StaticResource colorPal}"></Button>
+        <Button Text="Botón 2" VerticalOptions="Center" BackgroundColor="{StaticResource colorSec}"  Grid.Column="1"></Button>
     </Grid>
 
 </ContentPage>
