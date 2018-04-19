@@ -3,9 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ambitoRecursos"
              x:Class="ambitoRecursos.MainPage">
-
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="colorPal">
+                Orange
+            </Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button Text="Botón 1" VerticalOptions="Center" BackgroundColor="{StaticResource }"></Button>
+        <Button Text="Botón 2" VerticalOptions="Center"  Grid.Column="1"></Button>
+    </Grid>
 
 </ContentPage>
