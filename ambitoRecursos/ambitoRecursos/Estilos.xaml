@@ -1,14 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ambitoRecursos.Estilos">
+             x:Class="ambitoRecursos.Estilos"
+             BackgroundColor="{StaticResource PageBack}">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Resource Dictionary"></Label>
+            <StackLayout.Resources>
+                <ResourceDictionary>
+                    <Style x:Key="LabelNormal" TargetType="Label">
+                        <Setter Property="TextColor" Value="{StaticResource NormalTxtColor}"></Setter>
+                    </Style>
+                    <Style x:Key="ButtonFont" TargetType="Button">
+                        <Setter Property="FontAttributes" Value="Bold"></Setter>
+                        <Setter Property="FontSize" Value="Medium"></Setter>
+                    </Style>
+                </ResourceDictionary>
+            </StackLayout.Resources>
+            
+            <Label Text="Resource Dictionary" Style="{StaticResource LabelHead}"></Label>
             <Label Text="RecursosXaml son definiciones de objetos que se utilizan más de una vez"
-                   Margin="10,20,10,0">
+                   Margin="10,20,10,0" Style="{StaticResource LabelNormal}">
             </Label>
-            <Button HorizontalOptions="Center" Text="Aceptar"></Button>
+            <Button Style="{StaticResource ButtonFont}" TextColor="{StaticResource NormalTxtColor}" HorizontalOptions="Center" Text="Aceptar"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
