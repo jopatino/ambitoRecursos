@@ -18,6 +18,14 @@
     </ContentPage.Resources>
     
     <Grid BackgroundColor="{StaticResource colorTerc}">
+        <Grid.Resources>
+            <ResourceDictionary>
+                <Color x:Key="colorTerc">
+                    Purple //Toma el color más cercano
+                </Color>
+            </ResourceDictionary>
+        </Grid.Resources>
+        
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>

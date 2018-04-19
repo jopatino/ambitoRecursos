@@ -13,7 +13,7 @@ namespace ambitoRecursos
 		{
 			InitializeComponent();
 
-			MainPage = new ambitoRecursos.MainPage();
+			MainPage = new ambitoRecursos.Estilos();
 		}
 
 		protected override void OnStart ()
